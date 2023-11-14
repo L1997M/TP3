@@ -44,14 +44,14 @@ http://localhost/TP3/api/discos/:id
 verbo: POST
 
 Para crearlo deberiamos colocar en el body un objeto con los siguientes campos completos:
-`{
+` {
         "nombre": ---,
         "artista": ---,
         "sello_discografico": ---,
         "anio_lanzamiento": ---,
         "id_genero": ---,
         
-}`
+} `
 
 El nombre, artista, sello_discografico son varchar , anio_lanzamiento es int e id_genero es un int que tiene que estar si o si en la tabla genero.
 
