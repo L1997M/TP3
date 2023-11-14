@@ -7,10 +7,22 @@ Desde phpMyAdmin importar database/vinilos_db.sql.
 
 Se registran los discos y  los generos en distintas tablas.
 
-Discos contiene las siguientes columnas :**(int) id_disco, (varchar) nombre , (varchar) artista , (varchar) sello_discografico , (varchar) anio_lanzamiento ,(int) id_genero**
+Discos contiene las siguientes columnas :
+`(int) id_disco, 
+(varchar) nombre , 
+(varchar) artista , 
+(varchar) sello_discografico , 
+(varchar) anio_lanzamiento ,
+(int) id_genero `
 
-Generos contiene las siguientes columnas : ** (int) id_genero, (varchar) nombre , (varchar) descripcion**
+Generos contiene las siguientes columnas : 
+`(int) id_genero, 
+(varchar) nombre , 
+(varchar) descripcion `
  
+## Descarga del trabajo
+Luego de descargar el trabajo desde https://github.com/L1997M/TP3 guardar la carpeta dentro de xampp/httdocs con el nombre TP3 (si es necesario renombrarla), luego para empezar darle start a Apache y MySql.
+
 # Requests
 ### Prueba desde postman
 Se debe colocar la siguiente URL http://localhost/TP3/api/discos para discos.
@@ -32,14 +44,14 @@ http://localhost/TP3/api/discos/:id
 verbo: POST
 
 Para crearlo deberiamos colocar en el body un objeto con los siguientes campos completos:
-{
+`{
         "nombre": ---,
         "artista": ---,
         "sello_discografico": ---,
         "anio_lanzamiento": ---,
         "id_genero": ---,
         
-}
+}`
 
 El nombre, artista, sello_discografico son varchar , anio_lanzamiento es int e id_genero es un int que tiene que estar si o si en la tabla genero.
 
