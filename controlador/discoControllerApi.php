@@ -75,6 +75,10 @@ class discoControllerApi{
             }
         }
     function insertarDisco ($params=null){
+            if(!$this->authHelper->isLoggedIn()){
+                $this->vista->response("Necesitas loguearte para poder realizar esta accion", 401);
+                return;
+            }
             $disco=$this->getData();
             if(empty($disco->nombre)||empty($disco->artista)||empty($disco->anio_lanzamiento)||empty($disco->sello_discografico)||empty($disco->id_genero)){
                 $this->vista->response("Complete los campos correspondientes",400);
